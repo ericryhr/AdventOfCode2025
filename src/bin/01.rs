@@ -1,7 +1,7 @@
 advent_of_code::solution!(1);
 
 pub fn part_one(input: &str) -> Option<u64> {
-    let lines = input.split('\n').collect::<Vec<&str>>();
+    let lines = input.trim().lines().collect::<Vec<&str>>();
     let mut current_position: i64 = 50;
     let mut result = 0;
 
@@ -32,7 +32,7 @@ pub fn part_one(input: &str) -> Option<u64> {
 }
 
 pub fn part_two(input: &str) -> Option<u64> {
-    let lines = input.split('\n').collect::<Vec<&str>>();
+    let lines = input.trim().lines().collect::<Vec<&str>>();
     let mut current_position: i64 = 50;
     let mut new_position: i64 = 0;
     let mut result = 0;
